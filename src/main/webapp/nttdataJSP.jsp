@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="com.nttdata.grcarlos.tomcat.*" %>
+<%@ page import="com.nttdata.carlosgr.tomcat.*" %>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>JSP Prueba</title>
