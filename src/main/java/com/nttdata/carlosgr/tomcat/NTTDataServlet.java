@@ -1,4 +1,4 @@
-package com.nttdata.grcarlos.tomcat;
+package com.nttdata.carlosgr.tomcat;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -24,6 +24,7 @@ public class NTTDataServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+    @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("NTT Data -> Peticion GET OK | Peticion: ").append(request.getRequestURI());
 	}
@@ -31,6 +32,7 @@ public class NTTDataServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+    @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("NTT Data -> Peticion POST OK");
 	}

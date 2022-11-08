@@ -1,6 +1,7 @@
-package com.nttdata.grcarlos.tomcat;
+package com.nttdata.carlosgr.tomcat;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Clase que se usa para el fichero "nttdataJSP.jsp".
@@ -68,15 +69,15 @@ public class NTTDataJSP {
 	/**
 	 * @return the userAccounts
 	 */
-	public static HashMap<String, Integer> getUserAccounts() {
+	public static Map<String, Integer> getUserAccounts() {
 		return userAccounts;
 	}
 
 	/**
 	 * @param userAccounts the userAccounts to set
 	 */
-	public static void setUserAccounts(HashMap<String, Integer> userAccounts) {
-		NTTDataJSP.userAccounts = userAccounts;
+	public static void setUserAccounts(Map<String, Integer> userAccounts) {
+		NTTDataJSP.userAccounts = (HashMap<String, Integer>)userAccounts;
 	}
 	
 }
